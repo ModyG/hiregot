@@ -22,13 +22,13 @@ const CheckoutPage = ({ cartItems, total }) => (
   <CheckoutPageContainer>
     <CheckoutHeaderContainer>
       <HeaderBlockContainer>
-        <span>Product</span>
+        <span>Image</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Description</span>
+        <span>Desc</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
-        <span>Quantity</span>
+        <span>Qty</span>
       </HeaderBlockContainer>
       <HeaderBlockContainer>
         <span>Price</span>
@@ -45,9 +45,7 @@ const CheckoutPage = ({ cartItems, total }) => (
     <StripeCheckoutButton price={total} />
 
     <WarningContainer>
-      *Please use the following test credit card for payments*
-      <br />
-      4242 4242 4242 4242 - Exp: 01/22 - CVV: 123
+      Credit test: 4242 4242 4242 4242 - Exp: 01/22 - CVV: 123
     </WarningContainer>
   </CheckoutPageContainer>
 );
