@@ -1,10 +1,12 @@
-##Hiregot
----------
+**Hiregot**
+__ __ __
 
 To clone this repo: please use:
 
+```
+ git clone git@github.com:ModyG/hiregot.git
 
-> git clone git@github.com:ModyG/hiregot.git
+```
 
 To make it work follow the steps:
 
