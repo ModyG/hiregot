@@ -54,7 +54,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
         </i>
       </MenuIcon>
       <OptionsContainer className={isClicked ? "LinkActive" : ""}>
-        <NavItem>
+      <NavItem>
           <OptionLink to="/blogs">BLOGS</OptionLink>
         </NavItem>
         <NavItem onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
@@ -66,6 +66,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
         <NavItem>
           <OptionLink to="/contact">CONTACT</OptionLink>
         </NavItem>
+
         {currentUser ? (
           <NavItem>
             <OptionLink onClick={signOutStart}>SIGN OUT</OptionLink>
@@ -75,6 +76,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
             <OptionLink to="/signin">SIGN IN</OptionLink>
           </NavItem>
         )}
+
         <CartIcon />
       </OptionsContainer>
       {hidden ? null : <CartDropdown />}

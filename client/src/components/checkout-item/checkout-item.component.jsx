@@ -24,9 +24,9 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
       </ImageContainer>
       <TextContainer>{name}</TextContainer>
       <QuantityContainer>
-        <div onClick={() => removeItem(cartItem)}><IoIcons.IoMdRemoveCircle/></div>
+        <div onClick={() => removeItem(cartItem)}><IoIcons.IoIosRemoveCircleOutline/></div>
         <span>{quantity}</span>
-        <div onClick={() => addItem(cartItem)}><IoIcons.IoAddCircleOutline/></div>
+        <div onClick={() => addItem(cartItem)}><IoIcons.IoIosAddCircleOutline/></div>
       </QuantityContainer>
       <TextContainer>{price}</TextContainer>
       <RemoveButtonContainer onClick={() => clearItem(cartItem)}>

@@ -32,6 +32,10 @@ export const QuantityContainer = styled(TextContainer)`
     margin: 0 10px;
   }
 
+  & svg {
+      margin: 3px 0px;
+    }
+    
   div {
     cursor: pointer;
   }
