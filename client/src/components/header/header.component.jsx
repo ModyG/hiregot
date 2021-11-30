@@ -20,7 +20,7 @@ import {
   MenuIcon,
 } from "./header.styles";
 
-const Header = ({ currentUser, hidden, signOutStart }) => {
+export const Header = ({ currentUser, hidden, signOutStart }) => {
   const [isClicked, setClicked] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
@@ -66,7 +66,6 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
         <NavItem>
           <OptionLink to="/contact">CONTACT</OptionLink>
         </NavItem>
-
         {currentUser ? (
           <NavItem>
             <OptionLink onClick={signOutStart}>SIGN OUT</OptionLink>
@@ -76,7 +75,6 @@ const Header = ({ currentUser, hidden, signOutStart }) => {
             <OptionLink to="/signin">SIGN IN</OptionLink>
           </NavItem>
         )}
-
         <CartIcon />
       </OptionsContainer>
       {hidden ? null : <CartDropdown />}
